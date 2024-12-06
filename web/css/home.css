@@ -1,0 +1,321 @@
+/* 国航专区 */
+.section {
+    max-width: 100%; /* 自适应宽度 */
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 15px;
+}
+
+.section h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* 网格布局 */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 每行两列 */
+    gap: 10px; /* 卡片间距 */
+    grid-auto-rows: auto; /* 自动适应内容高度 */
+}
+
+/* 单个卡片样式 */
+.card {
+    position: relative;
+    border-radius: 10px; /* 圆角边框 */
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 卡片阴影 */
+    background-color: #f5f5f5;
+}
+
+/* 调整每个卡片的高度 */
+.card:nth-child(1) {
+    grid-row: span 2; /* 跨两行 */
+    height: 220px;
+}
+
+.card:nth-child(2),
+.card:nth-child(4) {
+    height: 110px;
+}
+
+.card:nth-child(3) {
+    grid-row: span 2; /* 跨两行 */
+    height: 220px;
+}
+
+/* 图片样式 */
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 确保图片不变形 */
+}
+
+/* 卡片标题（覆盖层） */
+.card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.1); /* 半透明背景 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+/* 提示区域样式 */
+.static-banner {
+    background: url('../images/t3.webp') no-repeat; /* 蓝色背景 */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0; /* 与上下内容留出间距 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+    background-size: 100% 100%;
+}
+
+/* 提示文字 */
+.static-banner .banner-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 15px; /* 控制文字和图片的间距 */
+}
+
+.static-banner .text {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    flex: 1; /* 文字占据可用空间 */
+    text-align: center; /* 左对齐文字 */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* 超出部分显示省略号 */
+}
+
+/* 图片样式 */
+.static-banner img {
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover; /* 确保图片不变形 */
+}
+
+ .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100px;
+      object-fit: cover;
+    }
+
+    /* 卡片容器样式 */
+.ticket-card {
+    width: 280px; /* 卡片宽度 */
+    border-radius: 10px; /* 圆角 */
+    overflow: hidden; /* 隐藏溢出 */
+    background: #fff; /* 背景颜色 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 阴影 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* 动画效果 */
+    margin:1rem auto;
+}
+
+/* 悬停效果 */
+.ticket-card:hover {
+    transform: translateY(-5px); /* 上浮效果 */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* 加强阴影 */
+}
+
+/* 图片样式 */
+.ticket-img {
+    width: 100%; /* 图片占满卡片宽度 */
+    height: 160px; /* 固定高度 */
+    object-fit: cover; /* 确保图片比例适配 */
+}
+
+/* 信息部分样式 */
+.ticket-info {
+    padding: 10px; /* 内边距 */
+    font-size: 14px;
+    color: #333;
+}
+
+/* 标题 */
+.ticket-info h3 {
+    font-size: 16px; /* 标题字体大小 */
+    font-weight: bold; /* 加粗字体 */
+    margin-bottom: 5px; /* 间距 */
+}
+
+/* 日期 */
+.ticket-info p {
+    color: #888; /* 辅助文字颜色 */
+    margin-bottom: 5px; /* 间距 */
+}
+
+/* 价格 */
+.ticket-info .price {
+    color: #e74c3c; /* 红色价格 */
+    font-weight: bold; /* 加粗字体 */
+}
+/* 调整按钮的图标大小 */
+.swiper-button-next::after, .swiper-button-prev::after {
+    font-size: 20px!important; /* 设置按钮图标的大小 */
+}
+
+.section-header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin:0 auto;
+    padding:1rem;
+    background-color: #fff;
+}
+.section-header a{
+    text-decoration: none;
+    color:#606060;
+    font-size: 14px;
+}
+.section-header h2{
+    font-size: 18px;
+}
+.static-banner2{
+    background: url('../images/zz.webp') no-repeat;
+    background-size: cover;
+}
+
+/* 精选出行模块样式 */
+.travel-section {
+    padding: 20px;
+    background-color: #fff; /* 背景白色 */
+}
+
+.travel-section h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* 网格布局 */
+.travel-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 两列布局 */
+    gap: 10px; /* 卡片之间的间距 */
+}
+
+/* Card 1 样式 */
+.card-1 {
+    grid-column: 1; /* 占第一列 */
+    grid-row: 1 / span 2; /* 跨两行 */
+    height: 310px; /* 高度300px */
+}
+/* Card 2 样式 */
+.card-2 {
+    grid-column: 2; /* 占第二列 */
+    grid-row: 1; /* 第一行 */
+    height: 150px; /* 高度150px */
+}
+
+/* Card 3 样式 */
+.card-3 {
+    grid-column: 2; /* 占第二列 */
+    grid-row: 2; /* 第二行 */
+    height: 150px; /* 高度150px */
+}
+
+/* 卡片样式 */
+.travel-card {
+    position: relative;
+    border-radius: 10px; /* 圆角 */
+    overflow: hidden; /* 隐藏溢出 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    background-color: #f5f5f5; /* 浅灰背景 */
+    text-align: center;
+}
+
+.travel-card img {
+    width: 100%; /* 图片占满卡片宽度 */
+    height: 100%; /* 高度适配网格单元 */
+    object-fit: cover; /* 确保图片比例适配 */
+}
+
+/* 文字覆盖层 */
+.card-overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #fff; /* 文字颜色白色 */
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* 添加文字阴影 */
+}
+
+/* 活动专题 */
+.event-topics{
+    padding:20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+.event-topics h2{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.event-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:8px;
+}
+.event-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.event-card:nth-child(1){
+     grid-column: 1; /* 占第一列 */
+     grid-row: 1 / span 2; /* 跨两行 */
+     height: 300px;
+}
+.event-card:nth-child(2){
+    grid-column: 2;
+    grid-row: 1;
+    height: 150px;
+}
+.event-card:nth-child(3){
+    grid-column: 1;
+    height: 150px;
+}
+ .event-card:nth-child(4){
+    /* grid-column: 2; */
+    grid-row: 2 / span 2; /* 跨两行 */
+     /* height: 300px; */
+} 

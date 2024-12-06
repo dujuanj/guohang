@@ -1,0 +1,196 @@
+ /* 通用样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d8f0f9;
+        }
+
+        .top{
+            background: url('../images/banner2.gif') no-repeat;
+            width: 100%;
+            height: 18rem;
+            background-size: 100% 100%;
+        }
+
+        /* 导航栏样式 */
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 15px;
+            /* background-color: #ffffff; */
+            /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .nav .login {
+            font-size: 16px;
+            color: #fff;
+        }
+
+        .nav .search {
+            flex: 1;
+            margin: 0 10px;
+            position: relative;
+        }
+
+        .nav .search input {
+            width: 100%;
+            padding: 8px 30px 8px 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            outline: none;
+        }
+
+        .nav .search-icon {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 18px;
+            color: #888;
+        }
+
+        .nav .icons img {
+            width: 24px;
+            height: 24px;
+        }
+        main{
+            margin-bottom: 5rem;
+        }
+        /* 图标菜单容器 */
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            width: 90%;
+            max-width: 400px;
+            margin: 1rem auto;
+        }
+
+        /* 单个菜单项 */
+        .menu-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .menu-item .icon {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            background: linear-gradient(145deg, #e4e4e4, #ffffff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding:7px;
+            /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+        }
+
+        .menu-item .icon img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .menu-item .text {
+            margin-top: 8px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        /* 自定义每个图标的背景颜色 */
+        .menu-item:nth-child(1) .icon {
+            background: linear-gradient(145deg, #ff6b6b, #ff9494);
+        }
+
+        .menu-item:nth-child(2) .icon {
+            background: linear-gradient(145deg, #7289ff, #a0b3ff);
+        }
+
+        .menu-item:nth-child(3) .icon {
+            background: linear-gradient(145deg, #57c3ff, #8de4ff);
+        }
+
+        .menu-item:nth-child(4) .icon {
+            background: linear-gradient(145deg, #f0b259, #ffd285);
+        }
+
+        .menu-item:nth-child(5) .icon {
+            background: linear-gradient(145deg, #84c5ff, #a9ddff);
+        }
+
+        .menu-item:nth-child(6) .icon {
+            background: linear-gradient(145deg, #8dd78c, #b4efb2);
+        }
+
+        .menu-item:nth-child(7) .icon {
+            background: linear-gradient(145deg, #8080ff, #aaa9ff);
+        }
+
+        .menu-item:nth-child(8) .icon {
+            background: linear-gradient(145deg, #c684ff, #e5afff);
+        }
+
+         /* 底部导航栏 */
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #ffffff;
+            border-top: 1px solid #ddd;
+            height: 60px;
+            z-index: 1000;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 导航项样式 */
+        .bottom-nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 12px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .bottom-nav a svg {
+            width: 24px;
+            height: 24px;
+            margin-bottom: 5px;
+        }
+
+        .bottom-nav a.active {
+            color: #ff4b4b; /* 高亮当前页面 */
+        }
+
+        /* 小红点提示 */
+        .notification {
+            position: relative;
+        }
+
+        .notification .dot {
+            position: absolute;
+            top: -3px;
+            right: -3px;
+            width: 8px;
+            height: 8px;
+            background-color: #ff4b4b;
+            border-radius: 50%;
+        }
+
+       

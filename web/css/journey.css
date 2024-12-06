@@ -1,0 +1,154 @@
+body{
+    background-color: #fff;
+}
+/* 整体容器样式 */
+.travel-section {
+    background-color: #fff;
+    background-image: url('../images/jbj.webp'); /* 添加背景图 */
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    padding: 20px;
+    text-align: center; /* 文本居中 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+}
+
+/* 顶部标题和帮助图标 */
+.travel-header {
+    display: flex;
+    justify-content: space-between; /* 两边对齐 */
+    align-items: center;
+    margin-bottom: 20px;
+     position: relative;
+}
+
+.travel-header h2 {
+    font-size: 18px;
+    color: #333;
+    font-weight: normal;
+    position: absolute;
+    left:45%;
+}
+
+.help-icon {
+    width: 25px;
+    height: 25px;
+    margin-left: auto; 
+}
+
+/* 总里程统计部分 */
+.total-miles {
+    margin-bottom: 30px;
+}
+
+.total-number {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.total-desc {
+    font-size: 14px;
+    color: #888;
+}
+
+/* 分项统计行 */
+.stats-row {
+    display: flex;
+    justify-content: space-around; /* 项目等距分布 */
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* 分项统计单项 */
+.stat-item {
+    text-align: center;
+}
+
+.stat-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 1rem;
+}
+
+/* 分隔线 */
+.divider {
+    width: 1px;
+    height: 40px;
+    background-color: #eee;
+}
+/* 选项栏容器 */
+.tab-bar {
+    display: flex; /* 使用 Flexbox */
+    justify-content: space-around; /* 等间距分布 */
+    align-items: center; /* 垂直居中 */
+    background-color: #fff; /* 白色背景 */
+    padding: 25px 0; /* 上下内边距 */
+    border-bottom: 1px solid #eee; /* 底部分割线 */
+}
+
+/* 单个选项 */
+.tab-item {
+    position: relative; /* 定位用于下划线 */
+    font-size: 16px; /* 字体大小 */
+    color: #888; /* 默认文字颜色 */
+    font-weight: normal; /* 默认文字粗细 */
+    text-align: center; /* 居中对齐 */
+    cursor: pointer; /* 鼠标悬停变为手型 */
+}
+
+/* 激活状态 */
+.tab-item.active {
+    color: #000; /* 激活文字颜色黑色 */
+    font-weight: bold; /* 激活文字加粗 */
+}
+
+/* 下划线样式 */
+.tab-underline {
+    position: absolute;
+    bottom: -5px; /* 下划线距离文字底部的距离 */
+    left: 50%;
+    width: 20px; /* 下划线宽度 */
+    height: 2px; /* 下划线高度 */
+    background-color: #e74c3c; /* 红色下划线 */
+    transform: translateX(-50%); /* 水平居中 */
+    display: none; /* 默认隐藏 */
+}
+
+/* 显示下划线在激活状态 */
+.tab-item.active .tab-underline {
+    display: block;
+}
+/* 空状态容器样式 */
+.empty-trip {
+    display: flex;
+    flex-direction: column; /* 垂直排列 */
+    justify-content: center; /* 垂直居中 */
+    align-items: center; /* 水平居中 */
+    text-align: center; /* 文本居中 */
+    padding: 20px;
+    background-color: #fff; /* 白色背景 */
+    border-radius: 10px; /* 圆角 */
+    margin: 20px;
+}
+
+/* 图片样式 */
+.empty-image {
+    width: 250px; /* 设置图片宽度 */
+    height: auto; /* 保持图片比例 */
+    margin-bottom: 20px; /* 图片与文字间距 */
+}
+
+/* 提示文字样式 */
+.empty-text {
+    font-size: 14px; /* 文字大小 */
+    color: #888; /* 辅助灰色 */
+    line-height: 1.5; /* 行高 */
+}
